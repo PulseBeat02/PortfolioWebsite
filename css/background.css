@@ -1,8 +1,9 @@
 body {
     background-color: #202020;
+    overflow-y: scroll;
 }
 
-div {
+div.introduction {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -12,6 +13,7 @@ div {
 }
 
 p.opening {
+    color: white;
     font-family: Consolas, monaco, monospace;
     font-size: 30px;
     font-style: normal;
@@ -21,6 +23,7 @@ p.opening {
 }
 
 p.description {
+    color: white;
     font-family: Consolas, monaco, monospace;
     font-size: 17px;
     font-style: normal;
@@ -29,17 +32,40 @@ p.description {
     line-height: 25px;
 }
 
-span.arrow_down {
-    content: "\2193";
+p.scroll_down {
+    color: white;
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: 0;
-    margin-left: -350px;
-    font-size: 80px;
+    margin-top: 50px;
+    margin-left: -375px;
+    font-family: Consolas, monaco, monospace;
+    font-size: 15px;
     font-style: normal;
     font-variant: normal;
-    font-weight: normal;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+div.about_me {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 500px;
+    margin-left: -300px;
+    font-family: Consolas, sans-serif;
+    overflow: scroll;
+}
+
+span.arrow_down {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    width: 50px;
+    font-size: 80px;
     line-height: 300px;
     animation: up-down 1s infinite alternate;
 }
