@@ -1,0 +1,54 @@
+body {
+    background-color: #202020;
+}
+
+div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -575px;
+    font-family: Consolas, sans-serif;
+}
+
+p.opening {
+    font-family: Consolas, monaco, monospace;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+p.description {
+    font-family: Consolas, monaco, monospace;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+span.arrow_down {
+    content: "\2193";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -350px;
+    font-size: 80px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 300px;
+    animation: up-down 1s infinite alternate;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
