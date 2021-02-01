@@ -1,35 +1,35 @@
 body {
     background-color: #202020;
-    overflow-y: scroll;
+    height: 100%
 }
 
 div.introduction {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -250px;
-    margin-left: -575px;
+    margin-top: -15.625em;
+    margin-left: -35.9375em;
     font-family: Consolas, sans-serif;
 }
 
 p.opening {
     color: white;
     font-family: Consolas, monaco, monospace;
-    font-size: 30px;
+    font-size: 1.875em;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 0.5em;
 }
 
 p.description {
     color: white;
     font-family: Consolas, monaco, monospace;
-    font-size: 17px;
+    font-size: 1.0625em;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    line-height: 25px;
+    line-height: 1.45em;
 }
 
 p.scroll_down {
@@ -37,25 +37,25 @@ p.scroll_down {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: 50px;
-    margin-left: -375px;
+    margin-top: 3.125em;
+    margin-left: -23.4375em;
     font-family: Consolas, monaco, monospace;
-    font-size: 15px;
+    font-size: 0.9375em;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    line-height: 25px;
+    line-height: 1.5625em;
 }
 
-div.about_me {
+div.my_projects {
     color: white;
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: 500px;
-    margin-left: -300px;
+    margin-top: 31.25em;
+    margin-left: -18.75em;
     font-family: Consolas, sans-serif;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 span.arrow_down {
@@ -63,10 +63,11 @@ span.arrow_down {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-left: -350px;
-    width: 50px;
-    font-size: 80px;
-    line-height: 300px;
+    margin-top: -7.8em;
+    margin-left: -4.05em;
+    width: 3.125em;
+    font-size: 5em;
+    line-height: 18.75em;
     animation: up-down 1s infinite alternate;
 }
 
