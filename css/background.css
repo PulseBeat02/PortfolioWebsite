@@ -3,32 +3,101 @@ body {
     height: 100%
 }
 
+.box.home {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.box.social {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    top: 50%;
+    left: 50%;
+    margin: 0 -5px
+}
+
+.item {
+    margin: 0 5px;
+}
+
+.box.icons {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -14.5em;
+    margin-left: -55em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.box.flow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.flex-gap > div {
+    margin: 6px;
+}
+
 div.introduction {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -15.625em;
-    margin-left: -35.9375em;
+    margin-top: -24em;
+    margin-left: -55em;
     font-family: Consolas, sans-serif;
 }
 
 p.opening {
     color: white;
     font-family: Consolas, monaco, monospace;
-    font-size: 1.875em;
+    font-size: 2em;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    line-height: 0.5em;
+    line-height: 0;
 }
 
 p.description {
+    position: relative;
+    top: -20px;
     color: white;
     font-family: Consolas, monaco, monospace;
-    font-size: 1.0625em;
+    font-size: 1.1em;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
+    line-height: 1.45em;
+}
+
+p.about_me_usaco {
+    position: relative;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    left: 1em;
+    font-size: 3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 1.45em;
+}
+
+p.about_me_languages {
+    position: relative;
+    color: white;
+    font-family: Consolas, monaco, monospace;
+    left: 1em;
+    font-size: 1.25em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
     line-height: 1.45em;
 }
 
@@ -38,9 +107,9 @@ p.scroll_down {
     top: 50%;
     left: 50%;
     margin-top: 3.125em;
-    margin-left: -23.4375em;
+    margin-left: -43em;
     font-family: Consolas, monaco, monospace;
-    font-size: 0.9375em;
+    font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
@@ -64,11 +133,23 @@ span.arrow_down {
     top: 50%;
     left: 50%;
     margin-top: -7.8em;
-    margin-left: -4.05em;
+    margin-left: -8.25em;
     width: 3.125em;
     font-size: 5em;
     line-height: 18.75em;
     animation: up-down 1s infinite alternate;
+}
+
+div.horizontal-line {
+    background-color: dimgray;
+    height: 1px;
+}
+
+div.vertical-line {
+    width: 1px;
+    background-color: dimgray;
+    height: 100%;
+    float: left;
 }
 
 @keyframes up-down {
